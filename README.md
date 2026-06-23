@@ -4,6 +4,15 @@
 
 AI-powered map product intelligence workspace for user feedback, competitor signals, human review, charts, and PM reports.
 
+## 在线体验
+
+- Vercel 演示：https://map-product-intelligence.vercel.app/
+- GitHub 仓库：https://github.com/wangcongfelix/map-product-intelligence
+
+在线版本默认使用 DeepSeek API。导入资料、审核状态和信号结果保存在当前浏览器的本地存储中，不写入数据库。进行 AI 分析时，待分析文本会通过服务端 API 发送给 DeepSeek 生成结构化预分析；API Key 仅配置在 Vercel 服务端环境变量中，不会暴露给前端。
+
+未配置 DeepSeek Key 或仅演示流程时，可切换 Mock AI 完成流程演示。
+
 ## 项目简介
 
 这是一个面向地图、出行与户外产品经理的 AI 分析工作台，用于处理应用商城评论、版本更新日志、社区反馈、竞品体验记录等非结构化资料，并将它们转化为可审核、可沉淀、可汇报的产品信号。
